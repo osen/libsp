@@ -1,5 +1,8 @@
-#ifndef SPACIAL_SPACIAL_H
-#define SPACIAL_SPACIAL_H
+#ifndef SP_SP_H
+#define SP_SP_H
+
+struct SpContext;
+typedef struct SpContext SpContext;
 
 struct SpContext *SpContextCreate();
 void SpContextDestroy(struct SpContext *ctx);
@@ -13,7 +16,5 @@ int SpContextAddTriangle(
   float cx, float cy, float cz);
 
 void SpContextDump(struct SpContext *ctx);
-
-typedef struct SpContext SpContext;
 
 #endif

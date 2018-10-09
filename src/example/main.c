@@ -1,4 +1,4 @@
-#include "sp.h"
+#include <sp/sp.h>
 
 #include <stdlib.h>
 
